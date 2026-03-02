@@ -14,4 +14,10 @@ Called AS (
 )
 SELECT
     Investors.Investor_Name,
-    Committed.Total_Committ
+    Committed.Total_Committed,
+    COALESCE(Called.Total_Called, 0) AS Total_Called,
+    ROUND(COALESCE(Called.Total_Called, 0) * 100.0 / Committed.Total_Committed, 2) AS Utilization_Pct
+FROM Investors
+JOIN Committed ON Investors.Investor_ID = Committed.Investor_ID
+LEFT JOIN Called ON Investors.Investor_ID = Called.Investor_ID
+ORDER BY Utilization_Pct DESC;
