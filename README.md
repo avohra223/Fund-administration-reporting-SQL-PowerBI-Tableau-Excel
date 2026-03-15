@@ -128,3 +128,14 @@ Full documentation covering data architecture, SQL techniques, Power BI design, 
 ---
 
 ## Repository Structure
+├── sql/                        15 SQL queries (01-15)
+├── powerbi/
+│   ├── private_markets_dashboard.pbix
+│   └── private_markets_dashboard.pdf
+├── excel/
+│   └── LP_Quarterly_Statement_Stichting_Pensioenfonds_ABN_Q2_2024.xlsx
+├── tableau/
+│   └── README.md               Tableau dashboard links and data source documentation
+├── private_markets_raw_data_March2026.xlsx
+├── Private_Markets_Fund_Administration_Process_Documentation_Akhil_Vohra.docx
+└── README.md
