@@ -141,5 +141,3 @@ private_markets_raw_data_March2026.xlsx
 Private_Markets_Fund_Administration_Process_Documentation_Akhil_Vohra.docx
 README.md
 ```
-
-Note: use ` ```text ` instead of just ` ``` ` — this forces GitHub to preserve the formatting. And drop the tree characters (├── └──) since they're causing issues. A simple indented list is cleaner.
