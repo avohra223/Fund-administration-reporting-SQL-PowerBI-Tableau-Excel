@@ -6,9 +6,8 @@
 
 ## Overview
 
-This portfolio demonstrates end-to-end reporting and data governance skills applied to a private markets fund administration context — directly mirroring the operational environment at firms like BBH, where fund administrators are responsible for LP reporting, NAV validation, capital activity tracking, and data integrity across multi-currency, multi-fund structures.
-
-The work covers the full reporting lifecycle: raw data ingestion, structured querying, business analysis, governance dashboards, benchmark comparison, and client-facing LP reporting. All four core tools — SQL, Power BI, Tableau, and Excel — are represented with real business use cases.
+This portfolio demonstrates end-to-end reporting and data governance skills applied to a private markets fund administration context, directly mirroring the operational environment at firms like BBH, where fund administrators are responsible for LP reporting, NAV validation, capital activity tracking, and data integrity across multi-currency, multi-fund structures.
+The work covers the full reporting lifecycle: raw data ingestion, structured querying, business analysis, governance dashboards, benchmark comparison, and client-facing LP reporting. All four core tools (SQL, Power BI, Tableau, and Excel) are represented with real business use cases.
 
 ---
 
