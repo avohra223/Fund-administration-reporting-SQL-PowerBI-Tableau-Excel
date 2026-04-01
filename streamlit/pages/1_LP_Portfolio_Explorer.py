@@ -13,7 +13,11 @@ st.markdown("Select an investor to view their full cross-fund position, transact
 st.markdown("---")
 
 # --- Investor selector ---
-investors = query_df("SELECT Investor_ID, Investor_Name, Investor_Type, Country, Reporting_Currency FROM Investors ORDER BY Investor_Name")
+investors = query_df("""
+    SELECT Investor_ID, Investor_Name, Investor_Type, Country, Reporting_Currency
+    FROM Investors
+    ORDER BY CASE WHEN Investor_Name LIKE 'Caledonian%' THEN 0 ELSE 1 END, Investor_Name
+""")
 investor_options = dict(zip(investors["Investor_Name"], investors["Investor_ID"]))
 selected_name = st.sidebar.selectbox("Select Investor", list(investor_options.keys()))
 inv_id = investor_options[selected_name]
