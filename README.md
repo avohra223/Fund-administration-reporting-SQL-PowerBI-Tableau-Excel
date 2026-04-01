@@ -118,6 +118,23 @@ Client-facing quarterly statement for Stichting Pensioenfonds ABN (Dutch pension
 
 ---
 
+## Interactive Streamlit Dashboard (`/streamlit`)
+
+**[Live Dashboard](https://fund-reporting-dashboard.streamlit.app/)** — Interactive web application built with Python, Streamlit, SQLite, pandas, and Plotly.
+
+Four unique pages complementing the Power BI, Tableau, and Excel deliverables:
+
+| Page | Focus |
+|------|-------|
+| LP Portfolio Explorer | Select any LP — cross-fund position, transaction timeline, cumulative cash flow |
+| Cash Flow & J-Curve | Fund-level J-curve with Above/Below Water status, quarterly inflow/outflow waterfall |
+| FX Exposure Analytics | Currency rate trends, transaction volume by currency, FX translation impact |
+| Data Quality Monitor | Automated operational audit — 5 governance checks with traffic-light indicators |
+
+**Data pipeline:** Raw Excel → SQLite database (auto-generated on first run) → SQL queries + pandas transformations → Plotly charts
+
+---
+
 ## Process Documentation
 
 `Private_Markets_Fund_Administration_Process_Documentation_Akhil_Vohra.docx`
@@ -136,6 +153,11 @@ excel/
   LP_Quarterly_Statement_Stichting_Pensioenfonds_ABN_Q2_2024.xlsx
 tableau/
   README.md                 Tableau dashboard links and data source documentation
+streamlit/
+  app.py                    Main Streamlit app
+  db/load_data.py           Excel → SQLite loader + query helpers
+  pages/                    4 interactive dashboard pages
+  requirements.txt
 private_markets_raw_data_March2026.xlsx
 Private_Markets_Fund_Administration_Process_Documentation_Akhil_Vohra.docx
 README.md
