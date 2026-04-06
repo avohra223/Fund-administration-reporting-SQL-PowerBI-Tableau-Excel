@@ -16,3 +16,6 @@ jobs:
       - name: Ping credit risk engine
         run: |
           curl -s -o /dev/null -w "%{http_code}" https://credit-risk-engine-avohra.streamlit.app/ || true
+      - name: Ping PE portfolio analytics
+        run: |
+          curl -s -o /dev/null -w "%{http_code}" https://avohra223-pe-portfolio-analytics.streamlit.app/ || true
