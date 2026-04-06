@@ -10,6 +10,9 @@ jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
-      - name: Ping dashboard
+      - name: Ping fund reporting dashboard
         run: |
           curl -s -o /dev/null -w "%{http_code}" https://fund-reporting-dashboard.streamlit.app/ || true
+      - name: Ping credit risk engine
+        run: |
+          curl -s -o /dev/null -w "%{http_code}" https://credit-risk-engine-avohra.streamlit.app/ || true
